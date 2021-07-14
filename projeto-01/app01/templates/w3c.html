@@ -1,0 +1,54 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>W3C</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="{% static 'img/logo.png' %}" type="image/x-icon">
+
+    <link rel="stylesheet" href="{% static 'css/content.css' %}">
+
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="menu">
+        <a href="{% url 'index' %}"><img src="{% static 'img/logo.png' %}" alt="Logo"></a>
+        <ul>
+            <li><a href="{% url 'w3c' %}">W3C</a></li>
+            <li><a href="{% url 'html' %}">HTML</a></li>
+            <li><a href="{% url 'css' %}">CSS</a></li>
+            <li><a href="{% url 'javascript' %}">Javascript</a></li>
+            <li><a href="{% url 'backend' %}">Backend</a></li>
+            <li><a href="{% url 'frontend' %}">Frontend</a></li>
+        </ul>
+    </header>
+    <main class="main-container">
+        <div id="content">
+            <h1>W3C</h1>
+            <h4>O seu guia de consulta sobre o W3C</h4>
+            <hr>
+            <h2>O que é?</h2>
+            <p>O World Wide Web Consortium (W3C) é a principal organização de padronização da World Wide Web. 
+                Consiste em um consórcio internacional com 450 membros, agrega empresas, órgãos governamentais 
+                e organizações independentes com a finalidade de estabelecer padrões para a criação e a 
+                interpretação de conteúdos para a Web.</p>
+            <h2>História</h2>
+            <p>Foi fundado por Tim Berners-Lee em 1994 para levar a Web ao seu potencial máximo, por meio do 
+                desenvolvimento de protocolos comuns e fóruns abertos que promovam a sua evolução e assegurem 
+                a sua interoperabilidade. Sites desenvolvidos segundo esses padrões podem ser acessados e 
+                visualizados por qualquer pessoa ou tecnologia, independente dos hardware ou software utilizados, 
+                como celulares e PDAs, de maneira rápida e compatível com os novos padrões e tecnologias que 
+                possam surgir com a evolução da internet.</p>
+        </div>
+    </main>
+    
+</body>
+</html>

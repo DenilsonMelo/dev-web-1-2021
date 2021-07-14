@@ -1,0 +1,50 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>JavaScript</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="{% static 'img/logo.png' %}" type="image/x-icon">
+
+    <link rel="stylesheet" href="{% static 'css/content.css' %}">
+
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="menu">
+        <a href="{% url 'index' %}"><img src="{% static 'img/logo.png' %}" alt="Logo"></a>
+        <ul>
+            <li><a href="{% url 'w3c' %}">W3C</a></li>
+            <li><a href="{% url 'html' %}">HTML</a></li>
+            <li><a href="{% url 'css' %}">CSS</a></li>
+            <li><a href="{% url 'javascript' %}">Javascript</a></li>
+            <li><a href="{% url 'backend' %}">Backend</a></li>
+            <li><a href="{% url 'frontend' %}">Frontend</a></li>
+        </ul>
+    </header>
+    <main class="main-container">
+        <div id="content">
+            <h1>JavaScript</h1>
+            <h4>O seu guia de consulta sobre o JavaScript</h4>
+            <hr>
+            <h2>O que é?</h2>
+            <p>JavaScript (frequentemente abreviado como JS) é uma linguagem de programação interpretada 
+                estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma (protótipos, 
+                orientado a objeto, imperativo e, funcional). Juntamente com HTML e CSS, o JavaScript é uma 
+                das três principais tecnologias da World Wide Web. JavaScript permite páginas da Web 
+                interativas e, portanto, é uma parte essencial dos aplicativos da web. A grande maioria dos 
+                sites usa, e todos os principais navegadores têm um mecanismo JavaScript dedicado para executá-lo.
+            </p>
+        </div>
+    </main>
+    
+</body>
+</html>

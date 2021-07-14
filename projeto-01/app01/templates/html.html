@@ -1,0 +1,80 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>HTML</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="{% static 'img/logo.png' %}" type="image/x-icon">
+
+    <link rel="stylesheet" href="{% static 'css/content.css' %}">
+
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="menu">
+        <a href="{% url 'index' %}"><img src="{% static 'img/logo.png' %}" alt="Logo"></a>
+        <ul>
+            <li><a href="{% url 'w3c' %}">W3C</a></li>
+            <li><a href="{% url 'html' %}">HTML</a></li>
+            <li><a href="{% url 'css' %}">CSS</a></li>
+            <li><a href="{% url 'javascript' %}">Javascript</a></li>
+            <li><a href="{% url 'backend' %}">Backend</a></li>
+            <li><a href="{% url 'frontend' %}">Frontend</a></li>
+        </ul>
+    </header>
+    <main class="main-container">
+        <div id="content">
+            <h1>HTML</h1>
+            <h4>O seu guia de consulta sobre o HTML</h4>
+            <hr>
+            <h2>O que é?</h2>
+            <p>HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção mais básico da web. Define 
+                o significado e a estrutura do conteúdo da web. Outras tecnologias além do HTML geralmente 
+                são usadas para descrever a aparência/apresentação (CSS) ou a funcionalidade/ comportamento 
+                (JavaScript) de uma página da web. "Hipertexto" refere-se aos links que conectam páginas da 
+                Web entre si, seja dentro de um único site ou entre sites. Links são um aspecto fundamental da 
+                web. Ao carregar conteúdo na Internet e vinculá-lo a páginas criadas por outras pessoas, você 
+                se torna um participante ativo na world wide web.</p>
+            <h2>História</h2>
+            <p>Tim Berners-Lee (físico britânico) criou o HTML original (e outros protocolos associados como 
+                o HTTP) em uma estação NeXTcube usando o ambiente de desenvolvimento NeXTSTEP. Na época a 
+                linguagem não era uma especificação, mas uma coleção de ferramentas para resolver um problema 
+                de Tim: a comunicação e disseminação das pesquisas entre ele e seu grupo de colegas. Sua solução, 
+                combinada com a então emergente internet pública (que tornar-se-ia a Internet) ganhou atenção mundial.
+                <br>
+                As primeiras versões do HTML foram definidas com regras sintáticas flexíveis, o que ajudou aqueles 
+                sem familiaridade com a publicação na Web. Através do tempo, a utilização de ferramentas para autoria 
+                de HTML aumentou, assim como a tendência em tornar a sintaxe cada vez mais rígida. Apesar disso, por 
+                questões históricas (retrocompatibilidade), os navegadores ainda hoje conseguem interpretar páginas 
+                web que estão longe de ser um código HTML válido.
+                <br>
+                A linguagem foi definida em especificações formais na década de 1990, inspiradas nas propostas 
+                originais de Tim Berners-Lee em criar uma linguagem baseada em SGML para a Internet. A primeira 
+                publicação foi esboçada por Berners-Lee e Dan Connolly, e publicada em 1993 na IETF como uma aplicação 
+                formal para o SGML (com uma DTD em SGML definindo a gramática). A IETF criou um grupo de trabalho 
+                para o HTML no ano seguinte, e publicou o HTML 2.0 em 1995. Desde 1996, as especificações HTML vêm 
+                sendo mantidas, com o auxílio de fabricantes de software, pelo World Wide Web Consortium (W3C). 
+                Apesar disso, em 2000 a linguagem tornou-se também uma norma internacional (ISO/IEC 15445:2000). 
+                A recomendação HTML 4.01 foi publicada no final de 1999 pelo W3C. Uma errata ainda foi lançada em 2001.
+                <br>
+                Desde a publicação do HTML 3.5 no final de 1997, o grupo de trabalho da W3C tem cada vez mais — e de 
+                2002 a 2006, de forma exclusiva — focado no desenvolvimento do XHTML, uma especificação HTML baseada 
+                em XML que é considerada pela W3C como um sucessor do HTML. O XHTML faz uso de uma sintaxe mais 
+                rigorosa e menos ambígua para tornar o HTML mais simples de ser processado e estendido.
+                <br>
+                Em janeiro de 2008 o W3C publicou a especificação do HTML5 como Working Draft. Apesar de sua sintaxe 
+                ser semelhante a de SGML, o HTML5 abandonou qualquer tentativa de ser uma aplicação SGML e, definiu 
+                explicitamente sua própria serialização "html", além de uma alternativa baseada em XML, o XHTML5.</p>
+        </div>
+    </main>
+    
+</body>
+</html>

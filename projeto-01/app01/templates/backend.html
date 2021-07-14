@@ -1,0 +1,75 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Backend</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="{% static 'img/logo.png' %}" type="image/x-icon">
+
+    <link rel="stylesheet" href="{% static 'css/content.css' %}">
+
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="menu">
+        <a href="{% url 'index' %}"><img src="{% static 'img/logo.png' %}" alt="Logo"></a>
+        <ul>
+            <li><a href="{% url 'w3c' %}">W3C</a></li>
+            <li><a href="{% url 'html' %}">HTML</a></li>
+            <li><a href="{% url 'css' %}">CSS</a></li>
+            <li><a href="{% url 'javascript' %}">Javascript</a></li>
+            <li><a href="{% url 'backend' %}">Backend</a></li>
+            <li><a href="{% url 'frontend' %}">Frontend</a></li>
+        </ul>
+    </header>
+    <main class="main-container">
+        <div id="content">
+            <h1>Frameworks Backend</h1>
+            <h4>O seu guia de consulta sobre frameworks Backend</h4>
+            <hr>
+            <h2>O que é?</h2>
+            <p>
+                É uma base onde os desenvolvedores podem fazer aplicativos de uma forma 
+                mais rápida e padronizada.
+            </p>
+            <hr>
+            <h3>Principais Frameworks Backend</h3>
+            <h4> - Django</h4>
+            <p>Django é um framework backend de código aberto baseado na linguagem de programação Python. 
+                Ele segue o padrão model view controller (MVC). Django é adequado para o desenvolvimento 
+                de sites sofisticados e ricos em recursos baseados em banco de dados. Essa estrutura de 
+                backend facilita a conectividade ideal, codificação reduzida, maior capacidade de reutilização 
+                e desenvolvimento mais rápido. Ele usa Python para todas as operações no Django e fornece 
+                uma interface de administração opcional para ajudar a criar, ler, atualizar e excluir operações. 
+                Django é utilizado por muitos sites renomados, como Disqus, Mozilla e The Washington Times.
+            </p>
+            <hr>
+            <h4> - Laravel</h4>
+            <p>Lavarel é uma estrutura da web PHP de código aberto para o desenvolvimento de aplicativos da 
+                web baseados em Symfony que seguem a arquitetura model – view – controller (MVC). Ele oferece 
+                um sistema de empacotamento modular equipado com um gerenciador de dependências dedicado. 
+                O Laravel também fornece a seus usuários várias maneiras de acessar bancos de dados relacionais, 
+                juntamente com manutenção de aplicativos e utilitários de implantação. O Laravel possui uma 
+                licença MIT e um código-fonte hospedado no GitHub.
+            </p>
+            <hr>
+            <h4> - ExpressJS</h4>
+            <p>Express, é uma estrutura de aplicativo da web Node.js e software de código aberto disponível 
+                sob a licença do MIT. Ele é usado para construir APIs e aplicativos da web e é considerado 
+                uma estrutura de servidor Node.js padrão. Express é um componente de back-end da pilha MEAN 
+                junto com a estrutura de front-end AngularJS e bancos de dados MongoDB.
+            </p>
+            <hr>
+        </div>
+    </main>
+    
+</body>
+</html>

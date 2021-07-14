@@ -1,0 +1,52 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>CSS</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="{% static 'img/logo.png' %}" type="image/x-icon">
+
+    <link rel="stylesheet" href="{% static 'css/content.css' %}">
+
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="menu">
+        <a href="{% url 'index' %}"><img src="{% static 'img/logo.png' %}" alt="Logo"></a>
+        <ul>
+            <li><a href="{% url 'w3c' %}">W3C</a></li>
+            <li><a href="{% url 'html' %}">HTML</a></li>
+            <li><a href="{% url 'css' %}">CSS</a></li>
+            <li><a href="{% url 'javascript' %}">Javascript</a></li>
+            <li><a href="{% url 'backend' %}">Backend</a></li>
+            <li><a href="{% url 'frontend' %}">Frontend</a></li>
+        </ul>
+    </header>
+    <main class="main-container">
+        <div id="content">
+            <h1>CSS</h1>
+            <h4>O seu guia de consulta sobre o CSS</h4>
+            <hr>
+            <h2>O que é?</h2>
+            <p>CSS (Cascading Style Sheets ou Folhas de Estilo em Cascata) é uma linguagem de estilo 
+                (en-US) usada para descrever a apresentação de um documento escrito em HTML ou em XML 
+                (incluindo várias linguagens em XML como SVG, MathML ou XHTML). O CSS descreve como 
+                elementos são mostrados na tela, no papel, na fala ou em outras mídias. CSS é uma das 
+                principais linguagens da open web e é padronizada em navagadores web de acordo com as 
+                especificação da W3C. Desenvolvido em níveis, o CSS1 está atualmente obsoleto, o CSS2.1 
+                é uma recomendação e o CSS3, agora dividido em pequenos módulos, está progredindo para a 
+                sua padronização.
+            </p>
+        </div>
+    </main>
+    
+</body>
+</html>

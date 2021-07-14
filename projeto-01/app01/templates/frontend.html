@@ -1,0 +1,78 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Frontend</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="{% static 'img/logo.png' %}" type="image/x-icon">
+
+    <link rel="stylesheet" href="{% static 'css/content.css' %}">
+
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="menu">
+        <a href="{% url 'index' %}"><img src="{% static 'img/logo.png' %}" alt="Logo"></a>
+        <ul>
+            <li><a href="{% url 'w3c' %}">W3C</a></li>
+            <li><a href="{% url 'html' %}">HTML</a></li>
+            <li><a href="{% url 'css' %}">CSS</a></li>
+            <li><a href="{% url 'javascript' %}">Javascript</a></li>
+            <li><a href="{% url 'backend' %}">Backend</a></li>
+            <li><a href="{% url 'frontend' %}">Frontend</a></li>
+        </ul>
+    </header>
+    <main class="main-container">
+        <div id="content">
+            <h1>Frameworks Frontend</h1>
+            <h4>O seu guia de consulta sobre frameworks Frontend</h4>
+            <hr>
+            <h2>O que é?</h2>
+            <p>
+                É uma ferramenta que auxilia o programador a trabalhar com determinada linguagem. 
+                Eles entregam determinadas funcionalidades pré-prontas, bastando ao desenvolvedor adaptar 
+                àquilo ao seu programa.
+            </p>
+            <hr>
+            <h3>Principais Frameworks Frontend</h3>
+            <h4> - Bootstrap</h4>
+            <p>É o framework mais conhecido e famoso do mundo front-end. Criado em agosto de 2011 por dois 
+                engenheiros do Twitter, a ferramenta logo se tornou uma das mais famosas na hora de criar 
+                interfaces web. Hoje estima-se que cerca de 7 milhões de sites utilizem o Bootstrap como 
+                framework front-end. Entre suas vantagens, podemos citar a documentação farta e a comunidade 
+                muito ativa, a infinidade de componentes que podem ser facilmente chamados em suas aplicações, 
+                além da boa base de padrões estéticos, que permitem criar páginas belas e funcionais.
+            </p>
+            <hr>
+            <h4> - Materialize</h4>
+            <p>O Materialize é um framework front-end que utiliza o Material Design como base de inspiração 
+                para cores, ícones e formatos. Assim como os demais frameworks, ele pode ser baixado para um 
+                projeto ou ser acessado via CDN através de um simples import. Uma de suas vantagens é que ele 
+                tira muito proveito do jQuery, fazendo com que seja uma ferramenta cheia de recursos visuais, 
+                como Captions, Modais e Lightbox. Outra coisa interessante é o sistema de grids, parecido com 
+                o do Bootstrap… Outro ponto positivo é que ele tem elementos exclusivos para aparelhos móveis, 
+                como aquele menu hambúrguer muito usado em aplicativos e sites para celular. Ele é considerado 
+                também mais leve e agradável que outros frameworks, o que o faz ser uma escolha muito comum 
+                e certeira.
+            </p>
+            <hr>
+            <h4> - Material-UI
+            </h4>
+            <p>Este framework facilita a criação de interfaces dentro do padrão material design, trazendo também 
+                suas animações e transições. Sua base está no React, um framework JavaScript que é focado na 
+                experiência do usuário e que só tem crescido nos últimos anos.
+            </p>
+            <hr>
+        </div>
+    </main>
+    
+</body>
+</html>
