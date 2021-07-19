@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from django.contrib import messages
+from .forms import ContatoForm
 
 # Create your views here.
 def index(request):
@@ -21,4 +23,20 @@ def backend(request):
 
 def frontend(request):
     return render(request, 'frontend.html')
+
+def contato(request):
+    form = ContatoForm(request.POST or None)
+
+    if str(request.method) == 'POST':
+        if form.is_valid():
+            form.send_mail()
+            messages.success(request, 'E-mail enviado com sucesso')
+            form = ContatoForm()
+        else:
+            messages.error(request, 'Erro ao enviar e-mail')
+
+    context = {
+        'form': form
+    }
+    return render(request, 'contato.html', context)
 

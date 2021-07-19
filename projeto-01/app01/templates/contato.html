@@ -1,0 +1,42 @@
+{% load static %}
+{% load bootstrap4 %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contato</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="shortcut icon" href="{% static 'img/logo.png' %}" type="image/x-icon">
+    {% bootstrap_css %}
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="menu">
+        <a href="{% url 'index' %}"><img src="{% static 'img/logo.png' %}" alt="Logo"></a>
+        <ul>
+            <li><a href="{% url 'w3c' %}">W3C</a></li>
+            <li><a href="{% url 'html' %}">HTML</a></li>
+            <li><a href="{% url 'css' %}">CSS</a></li>
+            <li><a href="{% url 'javascript' %}">Javascript</a></li>
+            <li><a href="{% url 'backend' %}">Backend</a></li>
+            <li><a href="{% url 'frontend' %}">Frontend</a></li>
+            <li><a href="{% url 'contato' %}">Contato</a></li>
+        </ul>
+    </header>
+    <div class="container">
+        <h1>Contato</h1>
+        {% bootstrap_messages %} <!-- Caso a mensagem não seja enviada por algum motivo, deixar uma mensagem -->
+
+        <form action="{% url 'contato' %}" method="post" class="form" autocomplete="off">
+            {% csrf_token %} <!-- Recurso de segurança do Django. Gera um token diferente para cada formulário e verifica se ninguém o alterou no meio do caminho -->
+            {% bootstrap_form form %} <!-- O bootstrap será aplicado em nosso form -->
+            {% buttons %} <!-- Cria um botão -->
+            <button type="submit" class="btn btn-primary"> Enviar Mensagem</button>
+            {% endbuttons %}
+        </form>
+    </div>
+
+{% bootstrap_javascript jquery='full' %}
+</body>
+</html>
