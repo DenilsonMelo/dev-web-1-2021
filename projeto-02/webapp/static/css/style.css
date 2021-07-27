@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background: #EEE;
+}
+
+header{
+    height: 80px;
+    background: #FFF;
+    padding-top: 4px;
+    padding-left: 48px;
+}
+
+h1{
+    margin-top: 32px;
+    margin-bottom: 12px;
+    padding-left: 48px;
+}
+
+table{
+    border: 1px solid #000;
+    width: 960px;
+    margin-left: 48px;
+}
+
+thead{
+    text-align: left;
+    background: #DDD;
+}
+
+table thead tr th{
+    border: 1px solid #000;
+    padding: 8px;
+}
+
+table tbody tr td{
+    border-bottom: 1px solid #000;
+    padding: 8px;
+    padding-left: 12px;
+}
+
+table tbody tr td a{
+    color: #000;
+    text-decoration: none;
+}
+
+table tbody tr:hover{
+    background: #CCC;
+}
